@@ -1,1 +1,106 @@
-//
+@import 'variables';
+@import 'typography';
+//body
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* Website Wrapper */
+.website-wrapper{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/*Homepage*/
+.container{
+    width: 90%;
+    margin: auto;
+}
+
+//Navigation
+.navigation{
+    font-family: 'Roboto-Regular';
+    font-size: 1em;
+    line-height: 2em;
+    max-width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    left: 6%;
+    bottom: 12%;
+    span{
+        margin-right: 2em;
+        a{
+            text-decoration: none;
+            color: white !important;
+        }
+    }
+    .social{
+        margin-top: 2em;
+        width: 40%;
+        margin-left: 0;
+        display: flex;
+        justify-content: space-between;
+        img{
+            width: 20px;
+        }
+    }
+}
+
+//Logo
+.logo{
+    display: block;
+    width:120px;
+    position: absolute;
+    left: 6%;
+    top: 9%;
+}
+
+//Homepage
+.home{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-image:url('/img/main/main-background.jpg');
+    background-color: $red;
+    background-size: 100%;
+    background-blend-mode: multiply;
+    background-position: center top;
+    color: white !important;
+   .intro{
+       font-family: 'Roboto-Thin',sans-serif !important;
+       font-size: 6em !important;
+       margin-top: 1em;
+   }
+}
+.sidebar{
+    @extend .home;
+    background-size: cover;
+    background-position: center right;
+}
+.content-area{
+    background: $brown;
+    color: white;
+    .page-heading{
+        font-family: 'Roboto-Thin';
+        font-size: 4em;
+    }
+    .about-me{
+        font-family: 'Roboto-Regular';
+        font-size: 1em;
+        line-height: 1.5em;
+    }
+}
+
+.row{
+    display: flex;
+}
+.col-8{
+    width: ((8/12) * 100%);
+}
+.col-4{
+    width: ((4/12) * 100%);
+}
