@@ -159,6 +159,16 @@ body {
   line-height: 1.5em;
 }
 
+.content-area .about-me .frameworks {
+  width: 100%;
+  margin-top: 2em;
+}
+
+.content-area .about-me .frameworks img {
+  height: 45px;
+  margin-right: 2em;
+}
+
 .content-area .portfolio .long {
   background-image: url("/img/portfolio/1.jpg");
   background-size: cover;
