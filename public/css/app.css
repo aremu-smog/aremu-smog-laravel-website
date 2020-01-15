@@ -107,6 +107,10 @@ body {
   top: 9%;
 }
 
+.cancel {
+  text-decoration: line-through;
+}
+
 .home,
 .sidebar {
   width: 100%;
@@ -116,7 +120,7 @@ body {
   background-color: #FF0707;
   background-size: 100%;
   background-blend-mode: multiply;
-  background-position: center top;
+  background-position: right 30%;
   color: white !important;
 }
 
@@ -124,7 +128,7 @@ body {
 .sidebar .intro {
   font-family: "Roboto-Thin", sans-serif !important;
   font-size: 6em !important;
-  margin-top: 1em;
+  margin-top: 1.5em;
 }
 
 .sidebar {
