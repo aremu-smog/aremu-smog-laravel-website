@@ -39,11 +39,8 @@ body {
 .navigation {
   font-family: "Roboto-Regular";
   font-size: 1em;
-  line-height: 2em;
-  max-width: 500px;
-  display: -webkit-box;
-  display: flex;
-  flex-wrap: wrap;
+  line-height: 1.9em;
+  width: 550px;
   position: absolute;
   left: 6%;
   bottom: 12%;
@@ -53,33 +50,38 @@ body {
   display: none;
 }
 
-.navigation span {
+.navigation nav {
+  width: 100%;
+}
+
+.navigation nav span {
   margin-right: 2em;
   -webkit-transition: 1s;
   transition: 1s;
 }
 
-.navigation span:hover {
+.navigation nav span:hover {
   letter-spacing: 2px;
 }
 
-.navigation span a {
+.navigation nav span a {
   text-decoration: none;
   color: white !important;
 }
 
+.navigation nav span:last-child {
+  margin-right: 0;
+}
+
 .navigation .social {
+  display: block;
   margin-top: 2em;
-  width: 40%;
   margin-left: 0;
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-pack: justify;
-          justify-content: space-between;
 }
 
 .navigation .social img {
   width: 20px;
+  margin-right: 2em;
 }
 
 .message {
