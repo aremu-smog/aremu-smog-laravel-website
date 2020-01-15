@@ -26,6 +26,7 @@ body {
   overflow: hidden;
 }
 
+/*Rows and Column*/
 /*Homepage*/
 .container {
   width: 90%;
@@ -47,8 +48,18 @@ body {
   bottom: 12%;
 }
 
+.navigation .hide-nav {
+  display: none;
+}
+
 .navigation span {
   margin-right: 2em;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.navigation span:hover {
+  letter-spacing: 2px;
 }
 
 .navigation span a {
@@ -70,6 +81,23 @@ body {
 
 .navigation .social img {
   width: 20px;
+}
+
+.message {
+  font-family: 'Roboto-Thin';
+  font-size: 1.5em;
+  margin-top: -1.5em;
+  padding-bottom: 1em;
+}
+
+.message ul {
+  list-style: circle;
+}
+
+.message ul li {
+  font-family: 'Roboto-Regular';
+  font-size: 12px !important;
+  line-height: 14px;
 }
 
 .logo {
@@ -119,17 +147,166 @@ body {
   line-height: 1.5em;
 }
 
+.content-area .portfolio .long {
+  background-image: url("/img/portfolio/1.jpg");
+  background-size: cover;
+  background-position: center right;
+}
+
+.content-area .portfolio .short {
+  height: 35vh;
+  background: white;
+  width: 100%;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.content-area .portfolio .short:first-child {
+  background-image: url("/img/portfolio/2.jpg");
+  background-size: contain;
+  background-position: center top;
+}
+
+.content-area .portfolio .short:first-child:hover {
+  background-position: -550% top;
+}
+
+.content-area .portfolio .short:last-child {
+  background-image: url("/img/portfolio/3.jpg");
+  background-size: contain;
+  background-position: center top;
+}
+
+.content-area .portfolio .short:last-child:hover {
+  background-position: -550% top;
+}
+
+.content-area .reading-list .row {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: -3%;
+}
+
+.content-area .reading-list .col-3 .book {
+  width: 97%;
+  background: white;
+  height: 200px;
+  margin-top: 3%;
+}
+
+.content-area .hire-me .form-group {
+  width: 90%;
+  margin-bottom: 1em;
+}
+
+.content-area .hire-me .form-group input, .content-area .hire-me .form-group select, .content-area .hire-me .form-group textarea {
+  width: 100%;
+  background: none;
+  padding: 1em;
+  color: white;
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  padding-right: 0;
+  font-family: 'Roboto-regular';
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.content-area .hire-me .form-group input:focus, .content-area .hire-me .form-group select:focus, .content-area .hire-me .form-group textarea:focus {
+  border: 1px solid white;
+}
+
+.content-area .hire-me .form-group select {
+  width: calc(100% + 1em);
+}
+
+.content-area .hire-me .form-group select option {
+  color: black;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.content-area .hire-me .form-group input[type="submit"] {
+  padding: 1em 2em;
+  background: white;
+  color: black;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: 1s;
+  transition: 1s;
+  width: auto !important;
+  border: 1px solid rgba(255, 255, 255, 0);
+}
+
+.content-area .hire-me .form-group input[type="submit"]:hover {
+  color: white;
+  background: none;
+  border: 1px solid white;
+}
+
+.content-area .hire-me .col-12 .form-group {
+  width: 95%;
+}
+
 .row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.col-8 {
-  width: 66.66667%;
+.col-1 {
+  width: 8.33333%;
+}
+
+.col-2 {
+  width: 16.66667%;
+}
+
+.col-3 {
+  width: 25%;
 }
 
 .col-4 {
   width: 33.33333%;
+}
+
+.col-5 {
+  width: 41.66667%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.33333%;
+}
+
+.col-8 {
+  width: 66.66667%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33333%;
+}
+
+.col-11 {
+  width: 91.66667%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+.col-13 {
+  width: 108.33333%;
 }
 /*# sourceMappingURL=app.css.map */

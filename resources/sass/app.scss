@@ -13,6 +13,7 @@ body{
     height: 100vh;
     overflow: hidden;
 }
+/*Rows and Column*/
 
 /*Homepage*/
 .container{
@@ -31,11 +32,20 @@ body{
     position: absolute;
     left: 6%;
     bottom: 12%;
+    
+    .hide-nav{
+        display: none;
+    }
     span{
         margin-right: 2em;
+        transition: 1s;
+        &:hover{
+            letter-spacing: 2px;
+        }
         a{
             text-decoration: none;
             color: white !important;
+            
         }
     }
     .social{
@@ -48,6 +58,22 @@ body{
             width: 20px;
         }
     }
+}
+
+.message{
+    font-family: 'Roboto-Thin';
+    font-size: 1.5em;
+    margin-top: -1.5em;
+    ul{
+        list-style: circle ;
+       
+        li{
+            font-family: 'Roboto-Regular';
+            font-size: 12px !important;
+            line-height: 14px;
+        }
+    }
+    padding-bottom: 1em;
 }
 
 //Logo
@@ -93,14 +119,113 @@ body{
         font-size: 1em;
         line-height: 1.5em;
     }
+    .portfolio{
+       
+        
+        .long{
+            
+            background-image: url('/img/portfolio/1.jpg');
+            background-size: cover;
+            background-position: center right;
+            
+        }
+        .short{
+            height: 35vh;
+            background: white;
+            width: 100%;
+            transition: 2s;
+            &:first-child{
+                background-image: url('/img/portfolio/2.jpg');
+                background-size: contain;
+                background-position: center top;
+                &:hover{
+                    background-position: -550% top;
+                }
+            }
+            &:last-child{
+                background-image: url('/img/portfolio/3.jpg');
+                background-size: contain;
+                background-position: center top;
+                &:hover{
+                    background-position: -550% top;
+                }
+            }
+        }
+    }
+
+    .reading-list{
+        .row{
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: -3%;
+        }
+        .col-3{
+            .book{
+                width: 97%;
+                background: white;
+                height: 200px;
+                margin-top: 3%;
+            }
+        }
+    }
+
+    .hire-me{
+        .form-group{
+            width: 90%;
+            margin-bottom: 1em;
+            input,select,textarea{
+                width: 100%;
+                background: none;
+                padding: 1em;
+                color: white;
+                outline: none;
+                border: 1px solid rgba(255,255,255, 0.5);
+                padding-right: 0;
+                font-family: 'Roboto-regular';
+                transition: 1s;
+                &:focus{
+                    border: 1px solid rgba(255,255,255, 1);
+                }
+            }
+            select{
+                width: calc(100% + 1em);
+                option{
+                    color: black;
+                    padding-top: 0.5em;
+                    padding-bottom: 0.5em;
+                }
+            }
+            
+            input[type="submit"]{
+                padding: 1em 2em;
+                background: white;
+                color: black;
+                outline: none;
+                border: none;
+                cursor: pointer;
+                transition: 1s;
+                width: auto !important;
+                border: 1px solid rgba(255,255,255,0);
+                &:hover{
+                    color: white;
+                    background: none;
+                    border: 1px solid white;
+                }
+            }
+        }
+        .col-12{
+            .form-group{
+                width: 95%;
+            } 
+        }
+    }
 }
 
 .row{
     display: flex;
 }
-.col-8{
-    width: ((8/12) * 100%);
-}
-.col-4{
-    width: ((4/12) * 100%);
+@for $i from 1 through 13{
+    .col-#{$i} {
+        width: (($i/12) * 100%);
+    }
 }
