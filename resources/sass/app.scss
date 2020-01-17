@@ -313,6 +313,11 @@ body{
 }
 
 @media only screen and (max-width: 568px){
+    @mixin content_settings(){
+        width: 90%;
+        margin: auto;
+        margin-top:3em;
+    }
     .logo{
         width: 80px;
     }
@@ -347,6 +352,89 @@ body{
         .intro{
             font-size: 2.7em !important;
             margin-top: 55% !important;
+        }
+    }
+
+    .sidebar{
+        width:((3/12) *100%);
+        background-position: 89% center;
+    }
+    .content-area{
+        width:((9/12) * 100%);
+        // background: white;
+        font-size: 0.85em;
+        line-height: 1.2em;
+        padding-top: 6em;
+        overflow-y: visible;
+        // color:black;
+        
+        .page-heading{
+            font-family: 'Roboto-Bold';
+            font-size: 2.5em;
+            // color: $brown;
+            width: 90%;
+            margin: auto;
+            margin-top: 1em;
+        }
+    }
+    .about-me.col-8{
+        @include content_settings();
+        font-family: 'Roboto-Thin';
+        margin-bottom: 1em;
+        .frameworks{
+            img{
+                height: 35px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+    .hire-me.col-10{
+        @include content_settings();
+        .row{
+            flex-direction: column;
+            .col-6{
+                width: 100%;
+            }
+        }
+        .form-group{
+            input,select,textarea{
+                padding: 0.8em !important;
+                font-size: 0.85em;
+            }
+            select{
+                width:110% !important;
+            }
+            textarea{width:95% !important;}
+        }
+    }
+    .portfolio{
+        @include content_settings();
+        .row{
+            flex-direction: column;
+            .col-6{
+                width:100%;
+            }
+        }
+        .long{
+            height:250px;
+        }
+        .short{
+            background-position: bottom center !important;
+        }
+    }
+    .reading-list.col-10{
+        @include content_settings();
+        .col-3{
+            width: 50%;
+        }
+    }
+    .my-mind.col-10{
+        @include content_settings();
+        .recent-articles{
+            flex-wrap: wrap;
+            .col-4{
+                width:90%;
+            }
         }
     }
 }

@@ -18,6 +18,11 @@
   font-family: 'Roboto-Medium';
 }
 
+@font-face {
+  src: url("/font/Roboto-Bold.ttf");
+  font-family: 'Roboto-Bold';
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -453,6 +458,99 @@ body {
   .home .intro, .sidebar .intro {
     font-size: 2.7em !important;
     margin-top: 55% !important;
+  }
+  .sidebar {
+    width: 25%;
+    background-position: 89% center;
+  }
+  .content-area {
+    width: 75%;
+    font-size: 0.85em;
+    line-height: 1.2em;
+    padding-top: 6em;
+    overflow-y: visible;
+  }
+  .content-area .page-heading {
+    font-family: 'Roboto-Bold';
+    font-size: 2.5em;
+    width: 90%;
+    margin: auto;
+    margin-top: 1em;
+  }
+  .about-me.col-8 {
+    width: 90%;
+    margin: auto;
+    margin-top: 3em;
+    font-family: 'Roboto-Thin';
+    margin-bottom: 1em;
+  }
+  .about-me.col-8 .frameworks img {
+    height: 35px;
+    margin-bottom: 10px;
+  }
+  .hire-me.col-10 {
+    width: 90%;
+    margin: auto;
+    margin-top: 3em;
+  }
+  .hire-me.col-10 .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .hire-me.col-10 .row .col-6 {
+    width: 100%;
+  }
+  .hire-me.col-10 .form-group input, .hire-me.col-10 .form-group select, .hire-me.col-10 .form-group textarea {
+    padding: 0.8em !important;
+    font-size: 0.85em;
+  }
+  .hire-me.col-10 .form-group select {
+    width: 110% !important;
+  }
+  .hire-me.col-10 .form-group textarea {
+    width: 95% !important;
+  }
+  .portfolio {
+    width: 90%;
+    margin: auto;
+    margin-top: 3em;
+  }
+  .portfolio .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .portfolio .row .col-6 {
+    width: 100%;
+  }
+  .portfolio .long {
+    height: 250px;
+  }
+  .portfolio .short {
+    background-position: bottom center !important;
+  }
+  .reading-list.col-10 {
+    width: 90%;
+    margin: auto;
+    margin-top: 3em;
+  }
+  .reading-list.col-10 .col-3 {
+    width: 50%;
+  }
+  .my-mind.col-10 {
+    width: 90%;
+    margin: auto;
+    margin-top: 3em;
+  }
+  .my-mind.col-10 .recent-articles {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .my-mind.col-10 .recent-articles .col-4 {
+    width: 90%;
   }
 }
 /*# sourceMappingURL=app.css.map */
