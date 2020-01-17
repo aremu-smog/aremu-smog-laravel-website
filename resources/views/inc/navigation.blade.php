@@ -12,3 +12,9 @@
         <a href="https://web.facebook.com/aremu.gbamila" target="_blank"><img src="/img/social/facebook.png" alt="Facebook logo"></a>
     </div>
 </div>
+
+<div class="nav-menu" id="nav-menu">
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
