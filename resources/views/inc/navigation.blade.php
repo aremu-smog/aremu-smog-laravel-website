@@ -1,5 +1,5 @@
 <div class="navigation">
-    <nav> 
+    <nav class="pc"> 
         <span class="{{Request::is('about-me') ? "hide-nav":""}}"><a href="/about-me">About me</a> </span>
         <span class="{{Request::is('portfolio') ? "hide-nav":""}}"><a href="/portfolio">Portfolio</a></span>
         <span class="{{Request::is('hire-me') ? "hide-nav":""}}"><a href="/hire-me">Hire me</a> </span>

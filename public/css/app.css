@@ -367,3 +367,58 @@ body {
   width: 108.3333333333%;
 }
 
+@media only screen and (max-width: 568px) {
+  .logo {
+    width: 80px;
+  }
+
+  .navigation {
+    width: 50%;
+    height: 100vh;
+    left: 0;
+    bottom: 0;
+    background: white;
+    color: black;
+    display: none;
+  }
+
+  .navigation nav {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    width: 80%;
+    margin-left: 20%;
+    height: 100%;
+    margin-top: 40%;
+    -webkit-box-pack: center;
+            justify-content: center;
+  }
+
+  .navigation nav span {
+    margin-bottom: 1em;
+  }
+
+  .navigation nav span a {
+    color: black !important;
+  }
+
+  .home,
+  .sidebar {
+    background-size: cover;
+    background-position: center right;
+  }
+
+  .home .col-8,
+  .sidebar .col-8 {
+    width: 90% !important;
+  }
+
+  .home .intro,
+  .sidebar .intro {
+    font-size: 3em !important;
+    margin-top: 55% !important;
+  }
+}
+

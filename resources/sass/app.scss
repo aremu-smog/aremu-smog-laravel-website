@@ -276,3 +276,42 @@ body{
         width: (($i/12) * 100%);
     }
 }
+
+@media only screen and (max-width: 568px){
+    .logo{
+        width: 80px;
+    }
+    .navigation{
+        width: 50%;
+        height: 100vh;
+        left: 0;
+        bottom: 0;
+        background: white;
+        color: black;
+        display: none;
+        nav{
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            margin-left: 20%;
+            height: 100%;
+            margin-top: 40%;
+            justify-content: center;
+            span{
+                margin-bottom: 1em;
+                a{
+                    color: black !important;
+                }
+            }
+        }
+    }
+    .home{
+        background-size: cover;
+        background-position: center right;
+        .col-8{width: 90% !important}
+        .intro{
+            font-size: 3em !important;
+            margin-top: 55% !important;
+        }
+    }
+}
