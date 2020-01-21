@@ -100,6 +100,7 @@ body {
   height: 15px;
   position: absolute;
   left: 6%;
+  display: none;
   bottom: 15%;
   cursor: pointer;
 }
@@ -422,7 +423,7 @@ body {
   width: 108.3333333333%;
 }
 
-@media only screen and (max-width: 568px) {
+@media only screen and (max-width: 768px) {
   .logo {
     width: 80px;
   }
@@ -457,6 +458,11 @@ body {
 
   .navigation nav span a {
     color: black !important;
+  }
+
+  .nav-menu,
+  .nav-menu-close {
+    display: block;
   }
 
   .home,

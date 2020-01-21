@@ -68,6 +68,7 @@ body{
     height:15px;
     position: absolute;
     left: 6%;
+    display: none;
     bottom: 15%;
     cursor: pointer;
     span{
@@ -312,7 +313,7 @@ body{
     }
 }
 
-@media only screen and (max-width: 568px){
+@media only screen and (max-width: 768px){
     @mixin content_settings(){
         width: 90%;
         margin: auto;
@@ -344,6 +345,9 @@ body{
                 }
             }
         }
+    }
+    .nav-menu{
+        display: block;
     }
     .home{
         background-size: cover;
