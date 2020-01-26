@@ -66,10 +66,10 @@ body{
 .nav-menu{
     width:30px;
     height:15px;
-    position: absolute;
+    position: fixed;
     left: 6%;
     display: none;
-    bottom: 15%;
+    bottom: 10%;
     cursor: pointer;
     span{
         display: block;
