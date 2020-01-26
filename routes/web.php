@@ -13,7 +13,7 @@
 
 Route::get('/', 'PagesController@getHome');
 Route::get('/about-me', 'PagesController@getAboutMe');
-Route::get('/portfolio', 'PagesController@getPortfolio');
+Route::get('/portfolio', 'PortfoliosController@index');
 Route::get('/hire-me', 'PagesController@getHireMe');
 Route::get('/reading-list', 'PagesController@getReadingList');
 Route::get('/my-mind', 'PagesController@getMyMind');

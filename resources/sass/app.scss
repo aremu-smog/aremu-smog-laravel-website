@@ -171,35 +171,45 @@ body{
     .portfolio{
        
         
-        .long{
-            
-            background-image: url('/img/portfolio/1.jpg');
-            background-size: cover;
-            background-position: center right;
-            
-        }
-        .short{
-            height: 35vh;
-            background: white;
-            width: 100%;
-            transition: 2s;
-            &:first-child{
-                background-image: url('/img/portfolio/2.jpg');
-                background-size: contain;
-                background-position: center top;
-                &:hover{
-                    background-position: -550% top;
-                }
-            }
-            &:last-child{
-                background-image: url('/img/portfolio/3.jpg');
-                background-size: contain;
-                background-position: center top;
-                &:hover{
-                    background-position: -550% top;
+        .row{
+            .project{
+                .image{
+                    img{
+                        width: 100% !important;
+                    }
                 }
             }
         }
+           
+        // .long{
+            
+        //     background-image: url('/img/portfolio/1.jpg');
+        //     background-size: cover;
+        //     background-position: center right;
+            
+        // }
+        // .short{
+        //     height: 35vh;
+        //     background: white;
+        //     width: 100%;
+        //     transition: 2s;
+        //     &:first-child{
+        //         background-image: url('/img/portfolio/2.jpg');
+        //         background-size: contain;
+        //         background-position: center top;
+        //         &:hover{
+        //             background-position: -550% top;
+        //         }
+        //     }
+        //     &:last-child{
+        //         background-image: url('/img/portfolio/3.jpg');
+        //         background-size: contain;
+        //         background-position: center top;
+        //         &:hover{
+        //             background-position: -550% top;
+        //         }
+        //     }
+        // }
     }
 
     .reading-list{
