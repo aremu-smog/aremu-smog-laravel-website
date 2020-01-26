@@ -17,11 +17,12 @@
                     <div class="info">
                         <div class="container">
                             <div class="row">
-                                <div class="col-10">{{$project->name}}</div>
-                                <div class="col-2">
-                                    <a href="{{$project->url}}" target="_blank">Visit Site</a>
+                                <div class="col-9 project_name">{{$project->name}}</div>
+                                <div class="col-3 project_url">
+                                    <a href="{{$project->url}}" target="_blank">Visit Site <img src="/img/main/link_arrow.svg" alt=""> </a>
                                 </div>
                             </div>
+                        <div class="project_description">{{$project->description}}</div>
                         </div>
                     </div>
                     

@@ -202,6 +202,8 @@ body {
 .content-area {
   background: #650303;
   color: white;
+  height: 100vh;
+  overflow-y: scroll;
 }
 
 .content-area .page-heading {
@@ -225,8 +227,61 @@ body {
   margin-right: 2em;
 }
 
+.content-area .portfolio .row {
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.content-area .portfolio .row .project {
+  width: 49%;
+  margin-bottom: 2%;
+}
+
 .content-area .portfolio .row .project .image img {
   width: 100% !important;
+}
+
+.content-area .portfolio .row .project .info {
+  padding: 1.5em 0em;
+  margin-top: -0.3em;
+  background: white;
+  color: black;
+}
+
+.content-area .portfolio .row .project .info .project_name {
+  font-family: "Roboto-Regular";
+  font-size: 1.4em;
+}
+
+.content-area .portfolio .row .project .info .project_url {
+  text-align: center;
+}
+
+.content-area .portfolio .row .project .info .project_url img {
+  margin-left: 0px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.content-area .portfolio .row .project .info .project_description {
+  font-family: "Roboto-Light";
+  font-size: 0.7em;
+  margin-top: 0.5em;
+}
+
+.content-area .portfolio .row .project .info a {
+  color: black;
+  font-family: "Roboto-Light";
+  color: black;
+  font-size: 0.85em;
+  -webkit-transition: 1s;
+  transition: 1s;
+  text-decoration: none;
+}
+
+.content-area .portfolio .row .project .info a:hover img {
+  margin-left: 5px;
 }
 
 .content-area .reading-list .row {
@@ -462,7 +517,6 @@ body {
     font-size: 0.85em;
     line-height: 1.2em;
     padding-top: 6em;
-    overflow-y: visible;
   }
 
   .content-area .page-heading {
@@ -529,8 +583,15 @@ body {
             flex-direction: column;
   }
 
-  .portfolio .row .col-6 {
-    width: 100%;
+  .portfolio .row .project {
+    width: 100% !important;
+    margin-bottom: 5% !important;
+  }
+
+  .portfolio .row .project .row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+            flex-direction: row;
   }
 
   .portfolio .long {

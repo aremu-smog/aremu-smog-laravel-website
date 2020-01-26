@@ -151,6 +151,8 @@ body{
 .content-area{
     background: $brown;
     color: white;
+    height: 100vh;
+    overflow-y: scroll;
     .page-heading{
         font-family: 'Roboto-Thin';
         font-size: 4em;
@@ -172,10 +174,52 @@ body{
        
         
         .row{
+            justify-content: space-between;
+            flex-wrap: wrap;
             .project{
+                width: 49%;
+                margin-bottom: 2%;
                 .image{
                     img{
                         width: 100% !important;
+                    }
+                }
+
+                .info{
+                    // border: 1px solid white;
+                    padding: 1.5em 0em;
+                    margin-top: -0.3em;
+                    background: white;
+                    color: black;
+                    .project_name{
+                        font-family: 'Roboto-Regular';
+                        font-size: 1.4em;
+                    }
+                    .project_url{
+                        text-align: center;
+                        img{
+                            margin-left: 0px;
+                            transition: 0.5s;
+                        }
+                    }
+                    .project_description{
+                        font-family: 'Roboto-Light';
+                        font-size: 0.7em;
+                        margin-top: 0.5em;
+                    }
+                    a{
+                        color: black;
+                        font-family: 'Roboto-Light';
+                        color: black;
+                        font-size: 0.85em;
+                        transition: 1s;
+                        text-decoration: none;
+                        &:hover{
+                            img{
+                                margin-left: 5px;
+                            }
+                            
+                        }
                     }
                 }
             }
@@ -379,7 +423,7 @@ body{
         font-size: 0.85em;
         line-height: 1.2em;
         padding-top: 6em;
-        overflow-y: visible;
+        // overflow-y: visible;
         // color:black;
         
         .page-heading{
@@ -422,11 +466,16 @@ body{
         }
     }
     .portfolio{
+        
         @include content_settings();
         .row{
             flex-direction: column;
-            .col-6{
-                width:100%;
+            .project{
+                width:100% !important;
+                margin-bottom: 5% !important;
+                .row{
+                    flex-direction: row;
+                }
             }
         }
         .long{
