@@ -473,8 +473,23 @@ body{
             .project{
                 width:100% !important;
                 margin-bottom: 5% !important;
+                .info{
+                    .project_name{
+                        font-size: 1.1em !important;
+                    }
+                }
+                .project_url{
+                    text-align: center;
+                    img{
+                        display: none;
+                    }
+                }
                 .row{
                     flex-direction: row;
+                }
+                a{
+                    font-size: 0.7em !important;
+                    text-decoration: underline !important;
                 }
             }
         }

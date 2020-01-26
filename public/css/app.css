@@ -588,10 +588,27 @@ body {
     margin-bottom: 5% !important;
   }
 
+  .portfolio .row .project .info .project_name {
+    font-size: 1.1em !important;
+  }
+
+  .portfolio .row .project .project_url {
+    text-align: center;
+  }
+
+  .portfolio .row .project .project_url img {
+    display: none;
+  }
+
   .portfolio .row .project .row {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
             flex-direction: row;
+  }
+
+  .portfolio .row .project a {
+    font-size: 0.7em !important;
+    text-decoration: underline !important;
   }
 
   .portfolio .long {
