@@ -29,6 +29,10 @@ body {
   overflow: hidden;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* Website Wrapper */
 
 .website-wrapper {
@@ -213,18 +217,28 @@ body {
 
 .content-area .about-me {
   font-family: "Roboto-Regular";
-  font-size: 1em;
+  font-size: 0.9em;
+  line-height: 1.5em;
+  padding-bottom: 6em;
+  margin-top: -2em;
+}
+
+.content-area .about-me .sub-heading {
+  font-family: "Roboto-Thin";
+  font-size: 1.5em;
+  margin-top: 3em;
+}
+
+.content-area .about-me a {
+  color: white;
+}
+
+.content-area .about-me .col-6 {
   line-height: 1.5em;
 }
 
-.content-area .about-me .frameworks {
-  width: 100%;
-  margin-top: 2em;
-}
-
-.content-area .about-me .frameworks img {
-  height: 45px;
-  margin-right: 2em;
+.content-area .portfolio {
+  padding-bottom: 6em;
 }
 
 .content-area .portfolio .row {
@@ -284,6 +298,10 @@ body {
   margin-left: 5px;
 }
 
+.content-area .reading-list {
+  padding-bottom: 6em;
+}
+
 .content-area .reading-list .row {
   flex-wrap: wrap;
   -webkit-box-pack: justify;
@@ -292,10 +310,24 @@ body {
 }
 
 .content-area .reading-list .col-3 .book {
-  width: 97%;
+  width: 95%;
   background: white;
+  margin-top: 5%;
   height: 200px;
-  margin-top: 3%;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+}
+
+.content-area .reading-list .col-3 .book img {
+  height: 180px;
+}
+
+.content-area .hire-me {
+  padding-bottom: 6em;
 }
 
 .content-area .hire-me .form-group {
@@ -357,6 +389,14 @@ body {
   width: 95%;
 }
 
+.my-mind {
+  padding-bottom: 6em;
+}
+
+.my-mind .recent-articles {
+  flex-wrap: wrap;
+}
+
 .my-mind .recent-articles article {
   background: white;
   width: 97%;
@@ -385,8 +425,16 @@ body {
   font-size: 1.2em;
 }
 
+.my-mind .recent-articles article section a {
+  color: black;
+}
+
+.my-mind .recent-articles article section a:hover {
+  text-decoration: underline;
+}
+
 .my-mind .recent-articles article footer {
-  font-family: "Roboto-Thin";
+  font-family: "Roboto-Light";
   font-size: 0.7em;
   padding: 1.5em;
 }
@@ -496,6 +544,11 @@ body {
     background-position: center right;
   }
 
+  .home br,
+  .sidebar br {
+    display: none !important;
+  }
+
   .home .col-8,
   .sidebar .col-8 {
     width: 90% !important;
@@ -531,13 +584,24 @@ body {
     width: 90%;
     margin: auto;
     margin-top: 3em;
-    font-family: "Roboto-Thin";
+    font-family: "Roboto-Light";
     margin-bottom: 1em;
   }
 
-  .about-me.col-8 .frameworks img {
-    height: 35px;
-    margin-bottom: 10px;
+  .about-me.col-8 .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+  }
+
+  .about-me.col-8 .row .col-6,
+  .about-me.col-8 .row .col-5 {
+    width: 100%;
+  }
+
+  .about-me.col-8 .sub-heading {
+    font-family: "Roboto-Bold";
+    font-size: 1.1em;
   }
 
   .hire-me.col-10 {
@@ -626,7 +690,7 @@ body {
   }
 
   .reading-list.col-10 .col-3 {
-    width: 50%;
+    width: 85%;
   }
 
   .my-mind.col-10 {
@@ -639,8 +703,24 @@ body {
     flex-wrap: wrap;
   }
 
+  .my-mind.col-10 .recent-articles article {
+    margin-bottom: 7%;
+  }
+
+  .my-mind.col-10 .recent-articles article header {
+    height: 150px;
+  }
+
+  .my-mind.col-10 .recent-articles article header img {
+    height: 150px;
+  }
+
+  .my-mind.col-10 .recent-articles article section {
+    height: auto;
+  }
+
   .my-mind.col-10 .recent-articles .col-4 {
-    width: 90%;
+    width: 100%;
   }
 }
 

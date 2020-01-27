@@ -6,6 +6,7 @@ body{
     padding: 0;
     overflow: hidden;
 }
+a{text-decoration: none;}
 
 /* Website Wrapper */
 .website-wrapper{
@@ -159,19 +160,25 @@ body{
     }
     .about-me{
         font-family: 'Roboto-Regular';
-        font-size: 1em;
+        font-size: 0.9em;
         line-height: 1.5em;
-        .frameworks{
-            width: 100%;
-            margin-top: 2em;
-            img{
-                height: 45px;
-                margin-right: 2em;
-            }
+        padding-bottom: 6em;
+        margin-top: -2em;
+        .sub-heading{
+            font-family: 'Roboto-Thin';
+            font-size: 1.5em;
+            margin-top: 3em;
+        }
+        a{
+            color: white;
+        }
+        .col-6{
+            line-height: 1.5em;
         }
     }
     .portfolio{
        
+        padding-bottom: 6em;
         
         .row{
             justify-content: space-between;
@@ -257,6 +264,7 @@ body{
     }
 
     .reading-list{
+        padding-bottom: 6em;
         .row{
             flex-wrap: wrap;
             justify-content: space-between;
@@ -264,15 +272,22 @@ body{
         }
         .col-3{
             .book{
-                width: 97%;
+                width: 95%;
                 background: white;
+                margin-top: 5%;
                 height: 200px;
-                margin-top: 3%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                img{
+                    height: 180px;
+                }
             }
         }
     }
 
     .hire-me{
+        padding-bottom: 6em;
         .form-group{
             width: 90%;
             margin-bottom: 1em;
@@ -325,7 +340,9 @@ body{
 }
 
 .my-mind{
+    padding-bottom: 6em;
     .recent-articles{
+        flex-wrap: wrap;
         article{
             background: white;
             width: 97%;
@@ -348,9 +365,15 @@ body{
                 padding: 1em;
                 font-family: 'Roboto-Medium';
                 font-size: 1.2em;
+                a{
+                    color: black;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
             }
             footer{
-                font-family: 'Roboto-Thin';
+                font-family: 'Roboto-Light';
                 font-size: 0.7em;
                 padding: 1.5em;
             }
@@ -406,6 +429,9 @@ body{
     .home{
         background-size: cover;
         background-position: center right;
+        br{
+            display: none !important;
+        }
         .col-8{width: 90% !important}
         .intro{
             font-size: 2.7em !important;
@@ -436,14 +462,19 @@ body{
         }
     }
     .about-me.col-8{
+
         @include content_settings();
-        font-family: 'Roboto-Thin';
-        margin-bottom: 1em;
-        .frameworks{
-            img{
-                height: 35px;
-                margin-bottom: 10px;
+        .row{
+            flex-direction: column;
+            .col-6, .col-5{
+                width: 100%;
             }
+        }
+        font-family: 'Roboto-Light';
+        margin-bottom: 1em;
+        .sub-heading{
+            font-family: 'Roboto-Bold';
+            font-size: 1.1em;
         }
     }
     .hire-me.col-10{
@@ -503,15 +534,27 @@ body{
     .reading-list.col-10{
         @include content_settings();
         .col-3{
-            width: 50%;
+            width: 85%;
         }
     }
     .my-mind.col-10{
         @include content_settings();
         .recent-articles{
             flex-wrap: wrap;
+            article{
+                margin-bottom: 7%;
+                header{
+                    height: 150px;
+                    img{
+                        height: 150px;
+                    }
+                }
+                section{
+                    height: auto;
+                }
+            }
             .col-4{
-                width:90%;
+                width:100%;
             }
         }
     }

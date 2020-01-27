@@ -20,9 +20,9 @@
         <div class="website-wrapper">
             <div class="home">
                 <div class="container">
-                    <div class="col-8 intro">
+                    <div class="col-12 intro">
                         <a href="/"><img src="/img/main/Aremu Smog Logo.png" class="logo" alt="Aremu Smog logo"></a>
-                        On a daily journey to find 'ME' through CODES and <span class="cancel">DESIGN</span> 
+                        On a daily journey <br/> to  find 'ME' through <br/> CODES  and <span class="cancel">DESIGN</span> 
                     </div>
                     @include('inc.navigation')
                 </div>

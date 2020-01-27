@@ -1,3 +1,15 @@
+@php
+    $books = array(
+       'ego is the enemy.jpg',
+       'purple cow.jpg',
+       'how to make love like a pornstar.jpeg',
+       'long walk to freedom.jpeg',
+       'Losing_my_Virginity.png',
+       'zero-to-one.jpg',
+       'how to win friends and influence people.png',
+       'richest man in babylon.jpg',
+    );
+@endphp
 @extends('layout.page')
 
 @section('heading')
@@ -8,14 +20,11 @@
 
 <div class="reading-list col-10">
         <div class="row">
-            <div class="col-3"> <div class="book"></div></div>
-            <div class="col-3"> <div class="book"></div></div>
-            <div class="col-3"> <div class="book"></div></div>
-            <div class="col-3"> <div class="book"></div></div>
-            <div class="col-3"> <div class="book"></div></div>
-            <div class="col-3"> <div class="book"></div></div>
-            <div class="col-3"> <div class="book"></div></div>
-            <div class="col-3"> <div class="book"></div></div>
+            @foreach ($books as $book)
+        <div class="col-3"> <div class="book"><img src="/img/books/{{$book}}" alt="{{$book}}"></div></div>
+            @endforeach
+            
+           
 
         </div>
 </div>
