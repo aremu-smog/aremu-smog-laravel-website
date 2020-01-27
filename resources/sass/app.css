@@ -54,7 +54,7 @@ body {
 }
 
 .navigation .hide-nav {
-  display: none;
+  display: none !important;
 }
 
 .navigation nav {
@@ -63,12 +63,16 @@ body {
 
 .navigation nav span {
   margin-right: 2em;
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .navigation nav span:hover {
-  letter-spacing: 2px;
+  letter-spacing: 1px;
+}
+
+.navigation nav span:first-child {
+  display: none;
 }
 
 .navigation nav span a {
@@ -207,7 +211,7 @@ body {
   font-family: 'Roboto-Regular';
   font-size: 0.9em;
   line-height: 1.5em;
-  padding-bottom: 6em;
+  padding-bottom: 10em;
   margin-top: -2em;
 }
 
@@ -289,7 +293,7 @@ body {
 }
 
 .content-area .reading-list {
-  padding-bottom: 6em;
+  padding-bottom: 10em;
 }
 
 .content-area .reading-list .row {
@@ -381,7 +385,7 @@ body {
 }
 
 .my-mind {
-  padding-bottom: 6em;
+  padding-bottom: 10em;
 }
 
 .my-mind .recent-articles {
@@ -415,11 +419,11 @@ body {
   padding: 1em;
   font-family: 'Roboto-Medium';
   font-size: 1.2em;
-  text-decoration: none;
 }
 
 .my-mind .recent-articles article section a {
   color: black;
+  text-decoration: none;
 }
 
 .my-mind .recent-articles article section a:hover {
@@ -521,9 +525,14 @@ body {
   }
   .navigation nav span {
     margin-bottom: 1em;
+    -webkit-transition: 0s;
+    transition: 0s;
   }
   .navigation nav span a {
     color: black !important;
+  }
+  .navigation nav span:first-child {
+    display: block;
   }
   .nav-menu, .nav-menu-close {
     display: block;
@@ -576,7 +585,7 @@ body {
     width: 100%;
   }
   .about-me.col-8 .sub-heading {
-    font-family: 'Roboto-Bold';
+    font-family: 'Roboto-Medium';
     font-size: 1.1em;
   }
   .hire-me.col-10 {

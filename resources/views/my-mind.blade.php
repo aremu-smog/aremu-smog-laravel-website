@@ -13,7 +13,7 @@
                      <header>
                         <img src="/img/my-mind/what if i don't blow.jpeg" alt="">
                      </header>
-                     <section><a href="https://medium.com/@oluwagbamilaabiodunaremu/what-if-i-dont-blow-d0acf410af23" target="_blank">What I don't blow</a></section>
+                     <section><a href="https://medium.com/@oluwagbamilaabiodunaremu/what-if-i-dont-blow-d0acf410af23" target="_blank">What if I don't blow</a></section>
                      <footer>
                         Published on Jan 19, 2020 - 4min read
                      </footer>

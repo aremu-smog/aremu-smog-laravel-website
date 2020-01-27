@@ -33,15 +33,18 @@ body{
     bottom: 12%;
     
     .hide-nav{
-        display: none;
+        display: none !important;
     }
     nav{
         width: 100%;
         span{
             margin-right: 2em;
-            transition: 1s;
+            transition: 0.5s;
             &:hover{
-                letter-spacing: 2px;
+                letter-spacing: 1px;
+            }
+            &:first-child{
+                display: none;
             }
             a{
                 text-decoration: none;
@@ -162,7 +165,7 @@ body{
         font-family: 'Roboto-Regular';
         font-size: 0.9em;
         line-height: 1.5em;
-        padding-bottom: 6em;
+        padding-bottom: 10em;
         margin-top: -2em;
         .sub-heading{
             font-family: 'Roboto-Thin';
@@ -264,7 +267,7 @@ body{
     }
 
     .reading-list{
-        padding-bottom: 6em;
+        padding-bottom: 10em;
         .row{
             flex-wrap: wrap;
             justify-content: space-between;
@@ -340,7 +343,7 @@ body{
 }
 
 .my-mind{
-    padding-bottom: 6em;
+    padding-bottom: 10em;
     .recent-articles{
         flex-wrap: wrap;
         article{
@@ -365,9 +368,9 @@ body{
                 padding: 1em;
                 font-family: 'Roboto-Medium';
                 font-size: 1.2em;
-                text-decoration: none;
                 a{
                     color: black;
+                    text-decoration: none;
                     &:hover{
                         text-decoration: underline;
                     }
@@ -418,8 +421,12 @@ body{
             justify-content: center;
             span{
                 margin-bottom: 1em;
+                transition: 0s;
                 a{
                     color: black !important;
+                }
+                &:first-child{
+                    display: block;
                 }
             }
         }
@@ -474,7 +481,7 @@ body{
         font-family: 'Roboto-Light';
         margin-bottom: 1em;
         .sub-heading{
-            font-family: 'Roboto-Bold';
+            font-family: 'Roboto-Medium';
             font-size: 1.1em;
         }
     }
