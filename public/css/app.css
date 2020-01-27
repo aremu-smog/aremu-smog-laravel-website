@@ -423,6 +423,7 @@ a {
   padding: 1em;
   font-family: "Roboto-Medium";
   font-size: 1.2em;
+  text-decoration: none;
 }
 
 .my-mind .recent-articles article section a {

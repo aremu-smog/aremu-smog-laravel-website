@@ -6,7 +6,7 @@ body{
     padding: 0;
     overflow: hidden;
 }
-a{text-decoration: none;}
+// a{text-decoration: none;}
 
 /* Website Wrapper */
 .website-wrapper{
@@ -365,6 +365,7 @@ a{text-decoration: none;}
                 padding: 1em;
                 font-family: 'Roboto-Medium';
                 font-size: 1.2em;
+                text-decoration: none;
                 a{
                     color: black;
                     &:hover{
