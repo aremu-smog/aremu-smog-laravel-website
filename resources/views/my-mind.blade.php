@@ -27,7 +27,7 @@
                      </header>
                      <section><a href="https://medium.com/@oluwagbamilaabiodunaremu/what-i-do-instead-of-doing-free-jobs-designs-websites-motion-graphics-1615f08f2fde" target="_blank">What I do instead of free jobs(websites, graphic design and...)</a></section>
                      <footer>
-                        Published on Dec Nov 29, 2019 - 3min read
+                        Published on Nov 29, 2019 - 3min read
                      </footer>
                   </article>
             </div>
