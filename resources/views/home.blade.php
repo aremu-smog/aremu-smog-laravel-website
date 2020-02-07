@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/app.css">
-
+        <link rel="shortcut icon" href="/img/main/favicon.png" type="image/x-icon">
         <title>Aremu Smog</title>
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128909872-8"></script>
