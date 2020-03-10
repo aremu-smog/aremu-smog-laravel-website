@@ -1,5 +1,8 @@
 @php
     $books = array(
+        'the autobiography of malcomX.jpg',
+        'the book of joy.jpg',
+        'shoe dog.jpg',
        'ego is the enemy.jpg',
        'purple cow.jpg',
        'how to make love like a pornstar.jpeg',
